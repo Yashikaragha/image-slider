@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    background-color:beige;
+
+}
+
+.g1
+{
+  font-family: 'Times New Roman', Times, serif;
+}
+.slider-container{
+    position:relative;
+    width:500px;
+    height:300px;
+    overflow:hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+
+}
+.container
+{
+  position:absolute;
+  float:left;
+  width:auto;
+  height: auto;
+  font-style: oblique;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.image-container
+{
+    display:flex;
+    transition: transform .4s ease-in-out;
+}
+.btn
+{
+   position:absolute;
+   top:50%;
+   transform: translateY(-50%);
+   color:white;
+   font-size: 20px;
+   opacity: .5;
+
+}
+.btn.prev
+{
+  left: 10px;  
+}
+.btn.next
+{
+  right: 10px;  
+}
+.btn:hover
+{
+opacity: 1;
+}
