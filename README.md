@@ -3,7 +3,7 @@ This image slider is developed using html,css and javascript,
 the images i have used in my project are from picsum and
 with the basic knowledge of html,css,javascript one can develop this project
 
-html code
+# html code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +19,8 @@ html code
         <h3 style="color: black; text-align: center;">
             IMAGE SLIDER<br><br>   
           </h3>  
-
-    
-    <div class ="slider-container">
-        
-      <div class="image-container">
+<div class ="slider-container">
+    <div class="image-container">
         <img src="https://picsum.photos/id/5/500/300" alt="Image">
         <img src="https://picsum.photos/id/6/500/300" alt="Image">
         <img src="https://picsum.photos/id/8/500/300" alt="Image">
@@ -94,25 +91,17 @@ html code
         <img src="https://picsum.photos/id/72/500/300" alt="Image">
         <img src="https://picsum.photos/id/73/500/300" alt="Image">
         <img src="https://picsum.photos/id/74/500/300" alt="Image">
-
-
-        
-
     </div>
-   
-
     <i class="fa-sharp fa-solid fa-angles-left btn prev"></i>
     <i class="fa-sharp fa-solid fa-angles-right btn next"></i>
     </div>
 </div>
     <script src="index.js">
-
     </script>
-    
 </body>
 </html>
 
-css code
+#css code
 body{
     margin:0;
     display:flex;
@@ -120,9 +109,7 @@ body{
     height:100vh;
     align-items: center;
     background-color:beige;
-
 }
-
 .g1
 {
   font-family: 'Times New Roman', Times, serif;
@@ -134,7 +121,6 @@ body{
     overflow:hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
-
 }
 .container
 {
@@ -174,14 +160,12 @@ body{
 opacity: 1;
 }
 
-
-javascript code
+#javascript code
 
 const nextEl= document.querySelector(".next")
 const prevE1= document.querySelector(".prev")
 const imgsE1= document.querySelectorAll("img");
 const imagecontainerEl =document.querySelector(".image-container")
-
 let currentImg=1
 let timeout ;
 nextEl.addEventListener("click",()=>{
